@@ -12,12 +12,16 @@ namespace Quiron.LojaVirtual.Dominio.Repositorio
 {
     public class EfDbContext : DbContext
     {
+        public EfDbContext()
+        {
+
+        }
         public DbSet<Produto> Produtos { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
             modelBuilder.Entity<Produto>().ToTable("Produtos");
-        }
+        }        
     }
 }

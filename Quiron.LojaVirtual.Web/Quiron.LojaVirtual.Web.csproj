@@ -117,6 +117,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\ProdutosController.cs" />
+    <Compile Include="Controllers\TesteController.cs" />
     <Compile Include="Controllers\VitrineController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +143,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Teste\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Quiron.LojaVirtual.Dominio\Quiron.LojaVirtual.Dominio.csproj">

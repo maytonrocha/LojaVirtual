@@ -44,7 +44,7 @@ namespace Quiron.LojaVirtual.UnitTest
             {
                 PaginaAtual = 2,
                 ItensTotal = 28,
-                ItensPorPagina = 10
+                ItensPorPagina = 8
             };
 
             Func<int, string> paginaUrl = i => "pagina" + i;

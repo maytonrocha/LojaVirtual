@@ -9,7 +9,10 @@
     {
         <div class="pull-right">
             @Html.HiddenFor(p=>p.ProdutoId)
-            @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            @if (Request.Url != null)
+            {
+                @Html.Hidden("returnUrl", Request.Url.PathAndQuery)
+            }
             <input type="submit" class="btn btn-success" value="Comprar"/>
         </div>
     }
